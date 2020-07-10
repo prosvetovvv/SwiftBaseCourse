@@ -8,9 +8,6 @@
 
 import Foundation
 
-<<<<<<< HEAD
-
-=======
 // Lesson 4
 // Changing properties and call methods
 
