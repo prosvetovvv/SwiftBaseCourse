@@ -22,5 +22,5 @@ print("Max speed = ", sportCar1.showMainProperty())
 sportCar1.doAction(action: .enableSportMode)
 print(sportCar1.color)
 print(sportCar1.specialState)
->>>>>>> bb630772ad4ee4bcf133fc7a019d0faf669df9db
+
 

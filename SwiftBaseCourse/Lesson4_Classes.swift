@@ -13,7 +13,7 @@ enum Action {
     case enableSportMode, disableSportMode
 }
 
-class Car {
+class NewCar {
     let vin: String
     var color: String
     var km: UInt
@@ -41,7 +41,7 @@ class Car {
     }
 }
 
-class TrackCar: Car {
+class TrackCar: NewCar {
     var trunkVolume: UInt
     var specialState: Action
     
@@ -69,7 +69,7 @@ class TrackCar: Car {
     }
 }
 
-class SportCar: Car {
+class SportCar: NewCar {
     var maxSpeed: UInt
     var specialState: Action
     init(maxSpeed: UInt) {
