@@ -21,6 +21,10 @@ protocol Cars {
     func rePaint(to newColor: ColorCar) -> ColorCar    
 }
 
+protocol Odometer {
+    var odometer: UInt { get }
+}
+
 class CarBase: Cars {
     var vin: String
     var color: ColorCar
@@ -38,9 +42,10 @@ class CarBase: Cars {
     }
 }
 
-class MuscleCar: CarBase {
+class MuscleCar: CarBase, Odometer {
     var name: Brand
     var stateSportMode: Bool = false
+    var odometer: UInt
     
     func enableSportMode() -> Bool {
         stateSportMode = true
@@ -50,15 +55,17 @@ class MuscleCar: CarBase {
         stateSportMode = false
         return stateSportMode
     }
-    init(name: Brand, muscleCarVin: String, muscleCarColor: ColorCar) {
+    init(name: Brand, muscleCarVin: String, muscleCarColor: ColorCar, odometer: UInt) {
         self.name = name
+        self.odometer = odometer
         super.init(vin: muscleCarVin, color: muscleCarColor)
     }
 }
 
-class TankCar: CarBase {
+class TankCar: CarBase, Odometer {
     var name: TruckBrand
     var stateTank: StateTank = .empty
+    var odometer: UInt
     
     func loadTank () -> StateTank {
         stateTank = .full
@@ -68,8 +75,9 @@ class TankCar: CarBase {
         stateTank = .empty
         return stateTank
     }
-    init(name: TruckBrand, tankCarVin: String, tankCarColor: ColorCar) {
-        self.name = name       
+    init(name: TruckBrand, tankCarVin: String, tankCarColor: ColorCar, odometer: UInt) {
+        self.name = name
+        self.odometer = odometer
         super.init(vin: tankCarVin, color: tankCarColor)
     }
 }
@@ -95,13 +103,13 @@ extension Cars {
 
 extension MuscleCar: CustomStringConvertible {
     var description: String {
-        return "Name: \(name)\n VIN: \(vin)\n Color: \(color)\n StateSportMode: \(stateSportMode)"
+        return "Name: \(name)\n VIN: \(vin)\n Color: \(color)\n StateSportMode: \(stateSportMode)\n Odometer: \(odometer)\n"
     }
 }
 
 extension TankCar: CustomStringConvertible {
     var description: String {
-        return "Name: \(name)\n VIN: \(vin)\n Color: \(color)\n StateTank: \(stateTank)"
+        return "Name: \(name)\n VIN: \(vin)\n Color: \(color)\n StateTank: \(stateTank)\n Odometer: \(odometer)\n"
     }
 }
 
