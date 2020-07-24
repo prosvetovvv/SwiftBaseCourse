@@ -14,7 +14,7 @@ class Snake: SKShapeNode {
     var body = [SnakeBodyPart]()
     // скорость перемещения
     let moveSpeed = 125.0
-    // угол, необходимый для расчета направления
+    // угол для расчета направления
     var angle: CGFloat = 0.0
     
     convenience init(atPoint point: CGPoint) {

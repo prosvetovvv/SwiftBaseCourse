@@ -132,8 +132,6 @@ struct CollisionCategories{
     static let EdgeBody:   UInt32 = 0x1 << 3
 }
 
-
-
 extension GameScene: SKPhysicsContactDelegate {
     
     // Добавляем метод отслеживания начала столкновения

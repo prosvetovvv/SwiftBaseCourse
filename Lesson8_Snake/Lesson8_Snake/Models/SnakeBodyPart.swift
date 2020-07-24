@@ -19,6 +19,7 @@ class SnakeBodyPart: SKShapeNode {
         fillColor = GameColors.snakeColor
         strokeColor = GameColors.snakeStrokeColor
         lineWidth = 1
+        
         // размещаем элемент в переданной точке
         self.position = point
         // Создаем физическое тело

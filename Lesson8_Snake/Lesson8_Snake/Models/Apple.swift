@@ -9,7 +9,6 @@
 import UIKit
 import SpriteKit
 
-
 class Apple: SKShapeNode {
     
     let diameter = 10
