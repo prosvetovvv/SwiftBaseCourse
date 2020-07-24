@@ -17,6 +17,7 @@
 		E102E22224C8566E00F2DC05 /* SnakeBodyPart.swift in Sources */ = {isa = PBXBuildFile; fileRef = E102E22124C8566E00F2DC05 /* SnakeBodyPart.swift */; };
 		E102E22424C857D600F2DC05 /* SnakeHead.swift in Sources */ = {isa = PBXBuildFile; fileRef = E102E22324C857D600F2DC05 /* SnakeHead.swift */; };
 		E102E22624C8585100F2DC05 /* Snake.swift in Sources */ = {isa = PBXBuildFile; fileRef = E102E22524C8585100F2DC05 /* Snake.swift */; };
+		E102E22824CABDF100F2DC05 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E102E22724CABDF100F2DC05 /* Colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		E102E22124C8566E00F2DC05 /* SnakeBodyPart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnakeBodyPart.swift; sourceTree = "<group>"; };
 		E102E22324C857D600F2DC05 /* SnakeHead.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnakeHead.swift; sourceTree = "<group>"; };
 		E102E22524C8585100F2DC05 /* Snake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snake.swift; sourceTree = "<group>"; };
+		E102E22724CABDF100F2DC05 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				E102E21324C826B700F2DC05 /* Assets.xcassets */,
 				E102E21524C826B700F2DC05 /* LaunchScreen.storyboard */,
 				E102E21824C826B700F2DC05 /* Info.plist */,
+				E102E22724CABDF100F2DC05 /* Colors.swift */,
 			);
 			path = Lesson8_Snake;
 			sourceTree = "<group>";
@@ -159,6 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E102E22424C857D600F2DC05 /* SnakeHead.swift in Sources */,
+				E102E22824CABDF100F2DC05 /* Colors.swift in Sources */,
 				E102E22024C84CE400F2DC05 /* Apple.swift in Sources */,
 				E102E20D24C826B600F2DC05 /* GameScene.swift in Sources */,
 				E102E20F24C826B600F2DC05 /* GameViewController.swift in Sources */,
@@ -309,6 +313,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7U5XZ95AHH;
 				INFOPLIST_FILE = Lesson8_Snake/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -326,6 +331,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7U5XZ95AHH;
 				INFOPLIST_FILE = Lesson8_Snake/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

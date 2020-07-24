@@ -29,6 +29,8 @@ class GameViewController: UIViewController {
         scene.scaleMode = .resizeFill
         // добавляем сцену на экран
         skView.presentScene(scene)
+        // делаем видимым физ. тело
+        skView.showsFields = true
     }
     
     
